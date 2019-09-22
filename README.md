@@ -24,4 +24,8 @@ Assumptions:
 2) Weekends are not included in computations
 2.A) If a task starts on a weekend, the next weekday would be considered the Start date of the task
 2.B) If a task ends aon a weekend, the previous weekday would be considered the end date of the task.
-3)
+3) Project details are printed with the "getprojectdetails" command
+This would show the current state of the Project and Tasks
+4) "recomputeprojectdates" would recompute start and end dates, when appropriate.
+If a task starts before its dependencies end, its start date will be moved to the day after all dependency tasks end.
+If a task starts after its dependencies, start dates will not change.
